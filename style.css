@@ -194,7 +194,7 @@ Navigation Bar
 ############################################################ */
 .nav-background {
     background-color: var(--intermed-color);
-    height: 175px;
+    /* height: 175px; */
     border-bottom: 3px solid var(--main-color);
 }
 
