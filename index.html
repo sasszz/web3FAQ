@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="nav-background">
+        <!-- ############################################################ -->
+        <!-- Navigation Bar Content Top -->
+        <!-- ############################################################ -->
+        <div class="navigation-bar container">
+            <nav class="row pad">
+                <div class="navleft row">
+                    <img class="logo" src="./assets/heart-light.png" alt="Heart Icon">
+                    <h1>Web3 FAQ</h1>
+                </div>
+                <div class="navright row">
+                    <ul class="row">
+                        <li>Find a Pet</li>
+                        <li>About</li>
+                    </ul>
+                    <button onclick="hide(this)" class="button1">Donate</button>
+                </div>
+            </nav>
+            <!-- ############################################################ -->
+            <!-- Navigation Bar Content Bottom -->
+            <!-- ############################################################ -->
+            <div class="petsearch row margin pad">
+                <div class="selector-text">
+                    <p>I'm looking for a...</p>
+                    <div class="row">
+                        <img class="icon" src="./assets/paw-light.png" alt="Paw Icon">
+                        <select name="pet-selection" onchange="selectChange(this)">
+                            <option>Cat</option>
+                            <option>Dog</option>
+                            <option>Bunny</option>
+                            <option>Bird</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="location-selection">
+                    <p>in or near...</p>
+                    <div class="row">
+                        <img class="icon" src="./assets/mapicon.png" alt="Location Icon">
+                        <input class="location-search" type="text" placeholder="City or Zip Code">
+                    </div>
+                </div>
+                <button class="button2">Find your new best friend</button>
+            </div>
+        </div>
+    </div>
+    <!-- ############################################################ -->
+    <!-- End Navigation Bar -->
+    <!-- ############################################################ -->
+    <!-- ############################################################ -->
+    <!-- Begin Main Body -->
+    <!-- ############################################################ -->
+    <div class="container">
+        <!-- ############################################################ -->
+        <!-- Begin Question 1 Card -->
+        <!-- ############################################################ -->
+        <div class="pet-profile row pad">
+            <div class="frame-container">
+                <div class="frame">
+                    <img class="framed-image" src="./assets/question1.png" alt="Question 1">
+                </div>
+            </div>
+            <div class="profile-content column">
+                <p>Web3 is a “decentralized internet”, using blockchains to store data instead of centralized databases owned by a few giant corporations. The tokenization of internet infrastructure would power the internet, allowing anyone to own a part of a blockchain, or earn voting power on the direction of the platform.</p>
+            </div>
+            <div class="pets column">
+                <p><span id="numPets1">0</span> UpVotes</p>
+                <button onclick="increment(numPets1)" class="button3">UpVote</button>
+            </div>
+        </div>
+        <!-- ############################################################ -->
+        <!-- Begin Question 2 Card -->
+        <!-- ############################################################ -->
+        <div class="pet-profile row pad">
+            <div class="row">
+                <div class="frame-container">
+                    <div class="frame">
+                        <img class="framed-image" src="./assets/question2.png" alt="Bruce">
+                    </div>
+                </div>
+                <div class="profile-content column">
+                    <p>Web2 refers to the evolution of the internet from static web pages (Web1) to internet sites where users can upload data and interact with the platforms. An example would be social media sites - Facebook, Instagram, TikTok. 
+                        In simpler terms - it is a read/write internet.</p>
+                        <p>Web3 would be the next evolution of the internet, where data is stored on decentralized blockchains and is accessible to everyone. Instead of a company like Facebook owning the data and deciding how to use the data of its users without the users’ input, a Web3 Facebook could be owned by anyone willing to invest in the token powering the network, and vote on the direction of the platform. 
+                        In simpler terms - it is a read/write/own internet.</p>
+                </div>
+            </div>
+            <div class="pets column">
+                <p><span id="numPets1">0</span> UpVotes</p>
+                <button onclick="increment(numPets1)" class="button3">UpVote</button>
+            </div>
+        </div>
+        <!-- ############################################################ -->
+        <!-- Begin Question 3 Card -->
+        <!-- ############################################################ -->
+        <div class="pet-profile row pad">
+            <div class="row">
+                <div class="frame-container">
+                    <div class="frame">
+                        <img class="framed-image" src="./assets/question3.png" alt="Oscar">
+                    </div>
+                </div>
+                <div class="profile-content column">
+                    <p>These are two different ways to ensure the security of the network.</p>
+                    <p>Proof of Work is validating transactions on the blockchain by using computer processing power to compete in solving a puzzle (the winner of which is compensated). This uses physical energy to power the computers that compete.</p>
+                    <p>Proof of Stake does not require a competition as an algorithm will randomly select a winner who has invested in the blockchain’s currency and staked it (which is locking it up for a set period of time). The more tokens staked, the greater possibility of winning the bid. Since computer processing power is not needed to solve puzzles, Proof of Stake protocol does not require physical energy.</p>
+                </div>
+            </div>
+            <div class="pets column">
+                <p><span id="numPets1">0</span> UpVotes</p>
+                <button onclick="increment(numPets1)" class="button3">UpVote</button>
+            </div>
+        </div>
+        <!-- ############################################################ -->
+        <!-- Begin Question 4 Card -->
+        <!-- ############################################################ -->
+        <div class="pet-profile row pad">
+            <div class="row">
+                <div class="frame-container">
+                    <div class="frame">
+                        <img class="framed-image" src="./assets/question4.png" alt="Oscar">
+                    </div>
+                </div>
+                <div class="profile-content column">
+                    <p>Smart Contracts is a protocol that exists on the blockchain that will automatically execute based on the rules determined upon its creation. They are trustless (they don’t require a trusted centralized arbiter like a bank), autonomous (they execute automatically based on predetermined conditions) and transparent (anyone can view the history of transactions executed by the smart contract).</p>
+                    <p>A common smart contract are those that exchange tokens (like <a href="https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2">this one</a>, which is exchanging WETH).</p>
+                </div>
+            </div>
+            <div class="pets column">
+                <p><span id="numPets1">0</span> UpVotes</p>
+                <button onclick="increment(numPets1)" class="button3">UpVote</button>
+            </div>
+        </div>
+        <!-- ############################################################ -->
+        <!-- Begin Question 5 Card -->
+        <!-- ############################################################ -->
+        <div class="pet-profile row pad">
+            <div class="row">
+                <div class="frame-container">
+                    <div class="frame">
+                        <img class="framed-image" src="./assets/question5.png" alt="Oscar">
+                    </div>
+                </div>
+                <div class="profile-content column">
+                    <p>Bitcoin is considered “Digital Gold”. It acts as a store of value and offers an alternative to the traditional monetary system. Batches multiple signatures and transactions together which allows for a degree of pseudonymity, and users can have multiple BTC addresses. Bitcoin uses the PoW system.</p>
+                    <p>Ethereum, in contrast, is considered “Programmable Currency”. It acts as a Web3 platform for the next generation of smart contracts and dApps. The rise in popularity of ENS (Ethereum name service), and users having a single Ethereum address de-prioritizes privacy, as transactions are more easily traced. Ethereum uses the PoS system as of September 15, 2022.</p>
+                </div>
+            </div>
+            <div class="pets column">
+                <p><span id="numPets1">0</span> UpVotes</p>
+                <button onclick="increment(numPets1)" class="button3">UpVote</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
