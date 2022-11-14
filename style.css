@@ -133,6 +133,8 @@ button:active {
     box-shadow: 0.2rem 0.2rem var(--dark-color);
     border-radius: 10px;
     margin-bottom: 10px;
+    padding: 0.5rem;
+
 }
 
 .button3 {
@@ -143,6 +145,7 @@ button:active {
     box-shadow: 0.2rem 0.2rem var(--dark-color);
     border-radius: 10px;
     width: 7rem;
+
 }
 
 select {
@@ -181,12 +184,13 @@ li {
     font-family: var(--font);
 }
 
-li:hover {
+/* li:hover {
     color: var(--dark-color);
-}
+} */
 
 span, a {
     font-family: var(--font);
+    text-decoration: none;
 }
 
 /* ############################################################
@@ -208,9 +212,9 @@ Navigation Bar
     margin-bottom: 10px;
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 /* ############################################################
 Main
